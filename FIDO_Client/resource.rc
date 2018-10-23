@@ -1,0 +1,130 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+/////////////////////////////////////////////////////////////////////////////
+// 중립 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_MAIN DIALOGEX 0, 0, 307, 222
+STYLE DS_ABSALIGN | DS_LOCALEDIT | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "eWBM FingerPrint (Test Application v0.1)"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Clear",ID_LOG_CLEAR_BUTTON,226,8,66,14
+    EDITTEXT        ID_LOG,10,26,284,50,ES_MULTILINE | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    CONTROL         "",IDC_FP_IMAGE,"Static",SS_BITMAP | SS_CENTERIMAGE | WS_BORDER,6,91,190,121
+    GROUPBOX        "Finger Image",GROUPBOX_FP_IMAGE,3,84,296,137
+    PUSHBUTTON      "START",ID_FPT_ENROLL_1,200,181,74,31
+    EDITTEXT        IDC_EDIT_USERID,228,90,44,13,ES_AUTOHSCROLL
+    LTEXT           "UserID",IDC_STATIC,202,93,22,13
+    COMBOBOX        IDC_COMBO_HAND,228,119,44,106,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_HASSTRINGS | WS_VSCROLL
+    COMBOBOX        IDC_COMBO_ANGLE,228,151,44,106,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_HASSTRINGS | WS_VSCROLL
+    COMBOBOX        IDC_COMBO_COUNT,228,135,44,106,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_HASSTRINGS | WS_VSCROLL
+    LTEXT           "Hand",IDC_STATIC,204,121,19,11
+    LTEXT           "Finger",IDC_STATIC,203,135,19,11
+    EDITTEXT        IDC_EDIT_COUNT,227,104,44,14,ES_AUTOHSCROLL
+    LTEXT           "Count",IDC_STATIC,203,107,22,13
+    LTEXT           "Angle",IDC_STATIC,204,151,19,11
+    PUSHBUTTON      "Button2",ID_BUTTON_KILL,253,6,50,14,NOT WS_VISIBLE
+    COMBOBOX        IDC_COMBO_START,200,166,73,106,CBS_DROPDOWNLIST | CBS_AUTOHSCROLL | CBS_HASSTRINGS | WS_VSCROLL
+    CTEXT           "Static",IDC_STATIC_EVENT,36,3,162,10,SS_SUNKEN
+    CTEXT           "Static",IDC_STATIC_EVENT2,36,14,162,10,SS_SUNKEN
+    PUSHBUTTON      "Verify",ID_FPT_Verify_1,21,41,74,14,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "icon.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    DLG_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 303
+        BOTTOMMARGIN, 221
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+DLG_MAIN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 중립 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
